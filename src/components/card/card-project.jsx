@@ -20,7 +20,7 @@ export default function CardProject(props) {
   };
 
   return (
-    <div className="w-[330px] bg-accent/10 px-7 py-5 text-secondary transition-all hover:text-accent lg:w-[350px]">
+    <div className="w-[330px] border-2 border-green-500 /10 px-7 py-5 text-black transition-all hover:text-green-500 lg:w-[350px]">
       <div className="flex items-center justify-between">
         <a
           href={props.web ? props.web : props.github}
@@ -31,7 +31,7 @@ export default function CardProject(props) {
           {props.name}
         </a>
 
-        <div className="flex items-end gap-2 text-primary">
+        <div className="flex items-end gap-2 text-black">
           {props.github && (
             <a
               href={props.github}
@@ -92,10 +92,10 @@ export default function CardProject(props) {
           </div>
         ) : null}
       </div>
-      <p className="max-h-[130px] min-h-[130px] overflow-auto text-sm text-primary">
+      <p className="max-h-[130px] min-h-[130px] overflow-auto text-sm text-green-500">
         {props.desc}
       </p>
-      <div className="mt-5 font-mono text-xs text-primary">{props.stack}</div>
+      <div className="mt-5 font-mono text-xs text-black">{props.stack}</div>
     </div>
   );
 }

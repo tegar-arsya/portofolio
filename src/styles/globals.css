@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-base_col;
+  @apply bg-white;
 }
 
 ::-webkit-scrollbar {
@@ -22,7 +22,7 @@ body {
   .text-underline {
     position: relative;
     cursor: pointer;
-    @apply text-accent;
+    @apply text-black;
   }
   .text-underline:after {
     content: "";

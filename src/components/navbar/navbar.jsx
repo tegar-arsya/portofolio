@@ -40,33 +40,32 @@ export default function Navbar() {
   }, [isOpen]);
 
   const navbarText = [
-    { text: "Home", href: "/", number: "01" },
-    { text: "About", href: "/about", number: "02" },
-    { text: "Projects", href: "/projects", number: "03" },
+    { text: "Home", href: "/"},
+    { text: "About", href: "/about"},
+    { text: "Projects", href: "/projects"},
+    { text: "My cv", href: ""},
   ];
 
   return (
     <div
-      className={`fixed top-0 z-[98] w-screen ${
+      className={`fixed top-0 z-[98] w-screen text-green-500 ${
         !isNavbarVisible
           ? !isPageTop
-            ? `translate-y-0  bg-base_col shadow-[0_10px_30px_-10px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out ${
-                !isOpen ? "bg-opacity-80 backdrop-blur-md" : "bg-opacity-100"
-              }`
-            : " bg-base_col bg-opacity-80 py-3 transition-all"
+            ? `translate-y-0 -[0_10px_30px_-10px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out `
+            : " py-3 transition-all"
           : `transition-all duration-300 ease-in-out ${
               !isPageTop ? "-translate-y-full" : "translate-y-0"
             } `
       }`}
     >
       <div className="flex h-24 items-center justify-between px-7 lg:px-14">
-        <Link href="/" className="text-accent" scroll={false}>
+        <Link href="/"  scroll={false}>
           <h1
-            className="text-2xl font-semibold"
+            className="text-2xl font-semibold text-green-500"
             data-aos="fade-down"
             data-aos-once="true"
           >
-            Ulinnaja.
+            Tegar Arsya.
           </h1>
         </Link>
 
@@ -80,9 +79,9 @@ export default function Navbar() {
             className="relative z-30"
           >
             {!isOpen ? (
-              <BiMenuAltRight className="h-10 w-10 fill-current text-accent" />
+              <BiMenuAltRight className="h-10 w-10 fill-current" />
             ) : (
-              <BiX className="h-10 w-10 fill-current text-accent" />
+              <BiX className="h-10 w-10 fill-current " />
             )}
           </button>
         </div>
@@ -92,14 +91,13 @@ export default function Navbar() {
           {navbarText.map((item, index) => (
             <Link
               href={item.href}
-              className="flex flex-col items-end font-mono text-sm  text-primary transition-all duration-300 hover:text-accent xl:text-base"
               key={index}
               data-aos="fade-down"
               data-aos-delay={`${index}00`}
               data-aos-once="true"
               scroll={false}
             >
-              <span className="text-xs text-accent">{item.number}</span>
+              <span>{item.number}</span>
               <p>{`// ${item.text}`}</p>
             </Link>
           ))}
@@ -114,18 +112,18 @@ export default function Navbar() {
             : "translate-x-0 transition-all duration-300 ease-out"
         }`}
       >
-        <div className="fixed top-0 z-0 h-full w-full backdrop-blur-sm"></div>
-        <div className="fixed right-0 top-0 z-[99] h-full w-3/4 bg-base_col_darker drop-shadow-lg md:w-1/2">
+        <div className="fixed top-0 z-0 h-full w-full backdrop-blur-sm text-green-500"></div>
+        <div className="fixed right-0 top-0 z-[99] h-full w-3/4">
           <div className="mt-44 flex flex-col items-center justify-center gap-12 text-base md:text-lg">
             {navbarText.map((item, index) => (
               <Link
                 href={item.href}
-                className="text-center font-mono text-primary hover:text-accent"
+          
                 key={index}
                 onClick={() => setIsOpen(false)}
               >
                 <p className="flex flex-col">
-                  <span className="text-sm text-accent">{item.number}.</span>
+                  <span>{item.number}.</span>
                   {`${item.text}`}
                 </p>
               </Link>
