@@ -20,7 +20,7 @@ export default function CardProject(props) {
   };
 
   return (
-    <div className="w-[330px] border-2 border-green-500 /10 px-7 py-5 text-black transition-all hover:text-green-500 lg:w-[350px]">
+    <div className="w-[330px] border-2 border-green-500 /10 px-7 py-5 text-white transition-all hover:text-green-500 lg:w-[350px]">
       <div className="flex items-center justify-between">
         <a
           href={props.web ? props.web : props.github}
@@ -31,7 +31,7 @@ export default function CardProject(props) {
           {props.name}
         </a>
 
-        <div className="flex items-end gap-2 text-black">
+        <div className="flex items-end gap-2 text-white">
           {props.github && (
             <a
               href={props.github}
@@ -85,7 +85,7 @@ export default function CardProject(props) {
               {!props.web && "Source Code"}
             </p>
             {loading && (
-              <div className="absolute top-0 left-0 flex h-full w-full items-center justify-center rounded-md bg-base_col_darker/60">
+              <div className="absolute top-0 left-0 flex h-full w-full items-center justify-center rounded-md bg-white">
                 <LoadingSpinner />
               </div>
             )}
@@ -95,7 +95,7 @@ export default function CardProject(props) {
       <p className="max-h-[130px] min-h-[130px] overflow-auto text-sm text-green-500">
         {props.desc}
       </p>
-      <div className="mt-5 font-mono text-xs text-black">{props.stack}</div>
+      <div className="mt-5 font-mono text-xs text-green">{props.stack}</div>
     </div>
   );
 }

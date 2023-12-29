@@ -27,13 +27,13 @@ export default function Home() {
   </video>
 
         <p
-          className="ml-1 hidden pb-3 text-sm text-black md:block md:pb-7 md:text-base"
+          className="ml-1 hidden pb-3 text-sm text-white md:block md:pb-7 md:text-base"
           data-aos="fade-up"
         >
           Hi, my name is
         </p>
         <h1
-          className="pb-1 text-4xl font-semibold text-black md:mt-0 md:pb-4 md:text-5xl lg:text-6xl"
+          className="pb-1 text-4xl font-semibold text-white md:mt-0 md:pb-4 md:text-5xl lg:text-6xl"
           data-aos="fade-up"
         >
           Tegar Arsyadani.
@@ -45,7 +45,7 @@ export default function Home() {
           I build things for the web.
         </h1>
         <p
-          className="w-full text-sm leading-relaxed text-black md:w-[540px] md:text-base"
+          className="w-full text-sm leading-relaxed text-white md:w-[540px] md:text-base"
           data-aos="zoom-in-up"
         >
           Saya seorang programmer web. pengalaman saya membuat web dengan php dan javascript, tapi saya sedang belajar menggunakan react dan laraverel.

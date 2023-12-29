@@ -47,12 +47,12 @@ export default function Contact() {
               </div>
             </div>
           ))}
-          <div className="mt-4 h-20 w-[1px] bg-black"></div>
+          <div className="mt-4 h-20 w-[1px] bg-white"></div>
         </div>
       </div>
       <div className="fixed bottom-0 right-0 w-[105px]">
         <div className="flex flex-col items-center" data-aos="fade-up">
-          <div className="mt-4 h-20 w-[1px] bg-black"></div>
+          <div className="mt-4 h-20 w-[1px] bg-white"></div>
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ export default function CardAbout(props) {
 
   return (
     <div
-      className="flex items-center gap-2 rounded border border-black px-2 py-2 hover:bg-green-500 hover:bg-opacity-10 md:gap-3 lg:px-3"
+      className="flex items-center gap-2 rounded border border-green px-2 py-2 hover:bg-green-500 hover:bg-opacity-10 md:gap-3 lg:px-3"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -32,7 +32,7 @@ export default function CardAbout(props) {
       </div>
       <div className="flex items-center text-sm md:text-base lg:text-lg">
         <div
-          className={`font-medium text-black transition-all duration-300 ${
+          className={`font-medium text-white transition-all duration-300 ${
             hover ? "-translate-y-2 md:-translate-y-3 " : "translate-y-0 "
           }`}
         >

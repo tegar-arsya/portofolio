@@ -17,7 +17,7 @@ export default function Project() {
         Past Project Experience
       </h1>
       <p
-        className="text-center text-sm font-medium text-black md:text-base"
+        className="text-center text-sm font-medium text-white md:text-base"
         data-aos="fade-up"
         data-aos-duration="300"
       >
@@ -32,7 +32,7 @@ export default function Project() {
           What{`'`}s Next?
         </p>
         <h1
-          className="pb-1 text-4xl font-semibold leading-relaxed text-black md:text-5xl"
+          className="pb-1 text-4xl font-semibold leading-relaxed text-white md:text-5xl"
           data-aos="zoom-in-up"
         >
           Get In Touch
@@ -46,7 +46,7 @@ export default function Project() {
           Saya akan melakukan yang terbaik untuk menghubungi Anda kembali!
         </p>
         <button
-          className="rounded-[4px] border-2 border-black px-7 py-4 font-mono text-black transition-all duration-300 hover:bg-green hover:bg-opacity-10"
+          className="rounded-[4px] border-2 border-green px-7 py-4 font-mono text-white transition-all duration-300 hover:bg-green hover:bg-opacity-10"
           data-aos="flip-up"
           data-aos-duration="600"
         >

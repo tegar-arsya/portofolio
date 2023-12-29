@@ -60,7 +60,7 @@ export default function ListProject() {
       </div>
       <button
         onClick={shouldShowMore() ? handleShowMore : handleShowLess}
-        className="rounded-[4px] border-2 border-black px-7 py-4 font-mono text-green-500 transition-all duration-300 hover:bg-black hover:bg-opacity-10"
+        className="rounded-[4px] border-2 border-green px-7 py-4 font-mono text-white-500 transition-all duration-300 hover:bg-black hover:bg-opacity-10"
       >
         {shouldShowMore() ? "Show More" : "Show Less"}
       </button>

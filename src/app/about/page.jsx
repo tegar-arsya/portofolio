@@ -28,7 +28,7 @@ export default function About() {
               data-aos-duration="600"
             ></div>
           </div>
-          <div className="flex flex-col gap-5 pr-0 text-sm md:text-base lg:pr-10 xl:pr-0">
+          <div className="flex flex-col gap-5 pr-0 text-white md:text-base lg:pr-10 xl:pr-0">
             <p data-aos="zoom-in-right">
             Halo! Nama asli saya Tegar Arsyadani, seorang mahasiswa Teknik Informatika yang berminat dan berpengalaman di bidangnya
             Pengembangan Web dengan spesialisasi {" "}
@@ -95,7 +95,7 @@ export default function About() {
         </div>
         <div className="flex items-center gap-2 pb-12">
           <div
-            className="h-[1px] w-12 bg-black"
+            className="h-[1px] w-12 bg-green"
             data-aos="zoom-in-right"
             data-aos-duration="300"
             data-aos-once="true"
