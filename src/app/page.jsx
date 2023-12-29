@@ -1,4 +1,3 @@
-
 export const metadata = {
   title: "Tegar Arsya",
   description:
@@ -9,6 +8,24 @@ export default function Home() {
   return (
     <div>
       <div className="flex h-[80vh] w-full flex-col justify-center px-0 pt-44 leading-relaxed md:h-screen md:pt-16 lg:px-[70px] lg:pt-12 ">
+      <video
+    autoPlay
+    loop
+    muted
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover',
+      zIndex: -1,
+    }}
+  >
+    <source src="\public\images\2021_10_21_21_25_IMG_0547.MOV" type="video/mp4" />
+    {/* You can add additional source elements for other video formats */}
+  </video>
+
         <p
           className="ml-1 hidden pb-3 text-sm text-black md:block md:pb-7 md:text-base"
           data-aos="fade-up"
@@ -25,14 +42,13 @@ export default function Home() {
           className="pb-4 text-4xl font-semibold text-green-500 md:pb-8 md:text-5xl lg:text-6xl"
           data-aos="fade-up"
         >
-          I build things for the web and apps.
+          I build things for the web.
         </h1>
         <p
           className="w-full text-sm leading-relaxed text-black md:w-[540px] md:text-base"
           data-aos="zoom-in-up"
         >
-          I am a web programmer and mobile developer. my experience in making web is with php, but i'm learning to use react and laraverel.
-          and for mobile developers my experience is to make applications with java. but I'm also learning to use flutter and dart.
+          Saya seorang programmer web. pengalaman saya membuat web dengan php dan javascript, tapi saya sedang belajar menggunakan react dan laraverel.
         </p>
         <div
           className="mt-10 text-sm md:mt-14"
@@ -41,19 +57,19 @@ export default function Home() {
         >
         </div>
       </div>
-      <div className="flex w-full flex-col items-center justify-center py-24 text-center ">
+      <div className="flex h-[650px] w-full flex-col items-center justify-center py-24 text-center ">
         <div className="z-40 mb-0 md:mb-10">
           <h2
-            className="pb-2 text-3xl font-bold leading-tight text-black md:pb-0 md:text-4xl md:leading-relaxed lg:text-5xl lg:leading-relaxed"
+            className="pb-2 text-3xl font-bold leading-tight text-green-500 md:pb-0 md:text-4xl md:leading-relaxed lg:text-5xl lg:leading-relaxed"
             data-aos="zoom-in-up"
-            data-aos-duration="300"
+            data-aos-duration="300" style={{ marginTop: '200px'}}
           >
             Delivering modern,
             <br />
             cohensive & instuitive web solution.
           </h2>
           <p
-            className="text-sm text-green-500 md:text-base"
+            className="text-sm text-black md:text-base"
             data-aos="fade-up"
             data-aos-duration="300"
           >

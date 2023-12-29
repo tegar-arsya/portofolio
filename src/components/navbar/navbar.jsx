@@ -40,10 +40,10 @@ export default function Navbar() {
   }, [isOpen]);
 
   const navbarText = [
-    { text: "Home", href: "/"},
-    { text: "About", href: "/about"},
-    { text: "Projects", href: "/projects"},
-    { text: "My cv", href: ""},
+    { number: 1, text: "Home", href: "/"},
+    { number: 2,text: "About", href: "/about"},
+    { number: 3,text: "Projects", href: "/projects"},
+    { number: 4,text: "My cv", href: "https://tegar-arsya.github.io/cv/"},
   ];
 
   return (
@@ -90,8 +90,7 @@ export default function Navbar() {
         <div className="text-base-content hidden  gap-10 lg:flex">
           {navbarText.map((item, index) => (
             <Link
-              href={item.href}
-              key={index}
+              href={item.href} key={index}
               data-aos="fade-down"
               data-aos-delay={`${index}00`}
               data-aos-once="true"

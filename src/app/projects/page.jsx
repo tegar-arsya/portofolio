@@ -41,9 +41,9 @@ export default function Project() {
           className="w-full pb-8 text-sm leading-relaxed text-green-500 md:w-5/6 md:text-base lg:w-4/6 xl:w-1/2"
           data-aos="zoom-in-up"
         >
-          I am currently seeking job opportunities to gain more experience in
-          the industry. Whether you have any questions or simply want to say hi,
-          I will do my best to get back to you!
+          Saat ini saya sedang mencari peluang kerja untuk menambah pengalaman
+          industri. Apakah Anda mempunyai pertanyaan atau sekadar ingin menyapa,
+          Saya akan melakukan yang terbaik untuk menghubungi Anda kembali!
         </p>
         <button
           className="rounded-[4px] border-2 border-black px-7 py-4 font-mono text-black transition-all duration-300 hover:bg-green hover:bg-opacity-10"

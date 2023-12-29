@@ -1,12 +1,12 @@
 import Image from "next/image";
-import ulin from "@images/tg.jpg";
+import tegar from "@images/tg.jpg";
 import { tools, stacks } from "@/utils/datas";
 import CardAbout from "@/components/card/card-about";
 
 export const metadata = {
   title: "About | Tegar Arsyadani",
   description:
-    "About Ulinnaja Aldi | Hello! My real name is Aldilla Ulinnaja, an Informatics Engineering student interested and experienced in web development, UI design, and 3D modeling.",
+    "",
 };
 
 export default function About() {
@@ -30,18 +30,17 @@ export default function About() {
           </div>
           <div className="flex flex-col gap-5 pr-0 text-sm md:text-base lg:pr-10 xl:pr-0">
             <p data-aos="zoom-in-right">
-            Hello! My real name is Tegar Arsyadani, an Informatics Engineering student who is interested and experienced in 
-            Web Development and mobile application development, specializing in {" "}
-              <span className="text-green-500">Frontend Development</span> using
-              JavaScript and mobile using dart.
+            Halo! Nama asli saya Tegar Arsyadani, seorang mahasiswa Teknik Informatika yang berminat dan berpengalaman di bidangnya
+            Pengembangan Web dengan spesialisasi {" "}
+              <span className="text-green-500">Frontend Development dan Backend Development</span> menggunakan Javascript dan PHP.
             </p>
             <p data-aos="zoom-in-right" data-aos-delay="100">
-            As an Informatics Engineering student, I have strong knowledge and skills in Web programming, mobile programming and UI Design. 
-            I have the ability to create user-friendly and visually appealing websites and applications.
+            Sebagai mahasiswa Teknik Informatika, saya memiliki pengetahuan dan keterampilan yang kuat dalam pemrograman Web.
+            Saya memiliki kemampuan untuk membuat situs web yang ramah pengguna dan fitur yang diinginkan.
             </p>
             <p data-aos="zoom-in-right" data-aos-delay="200">
-            I always try to improve my skills and knowledge. I believe that ongoing training and personal projects are the keys to success. 
-            I am committed to staying up-to-date with the latest developments in my field and continuously expanding my knowledge and skills.
+            Saya selalu berusaha meningkatkan keterampilan dan pengetahuan saya. Saya percaya bahwa pelatihan berkelanjutan dan proyek pribadi adalah kunci kesuksesan.
+            Saya berkomitmen untuk selalu mengikuti perkembangan terkini di bidang saya dan terus memperluas pengetahuan dan keterampilan saya.
             </p>
           </div>
         </div>
@@ -52,8 +51,8 @@ export default function About() {
         >
           <div className="grayscale transition-all duration-500 hover:grayscale-0">
             <Image
-              src={ulin}
-              alt="ulin"
+              src={tegar}
+              alt="tegar"
               height={1000}
               className="scale-50 lg:scale-100 2xl:scale-75"
             />
