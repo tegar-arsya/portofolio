@@ -48,7 +48,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed top-0 z-[98] w-screen text-green-500 ${
+      className={`fixed top-0 z-[98] w-screen text-green-500 bg-white ${
         !isNavbarVisible
           ? !isPageTop
             ? `translate-y-0 -[0_10px_30px_-10px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out `
@@ -105,7 +105,7 @@ export default function Navbar() {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 h-screen w-full lg:hidden ${
+        className={`fixed top-0 h-screen w-full lg:hidden bg-white ${
           !isOpen
             ? "translate-x-full transition-all duration-300 ease-in"
             : "translate-x-0 transition-all duration-300 ease-out"
