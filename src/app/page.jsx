@@ -51,7 +51,7 @@ export default function Home() {
           className="pb-1 text-4xl font-semibold text-white md:mt-0 md:pb-4 md:text-5xl lg:text-6xl"
           data-aos="fade-up"
         >
-          Tegar Arsyadani.
+          PADUKUHAN 
         </h1>
         <h1
           className="pb-4 text-4xl font-semibold text-green-500 md:pb-8 md:text-5xl lg:text-6xl"
