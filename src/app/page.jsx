@@ -1,6 +1,8 @@
 // Import React dan lainnya sesuai kebutuhan
 import React from "react";
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // Metadata
 export const metadata = {
   title: "Tegar Arsya",
@@ -12,24 +14,32 @@ export default function Home() {
   return (
     <div>
       <div className="flex h-[80vh] w-full flex-col justify-center px-0 pt-44 leading-relaxed md:h-screen md:pt-16 lg:px-[70px] lg:pt-12">
-      <video
-          autoPlay
-          loop
-          muted={false}
-          controls
-          style={{
-            position: 'absolute',
-            top: 150,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            zIndex: -1,
-          }}
-        >
-          <source src="/images/bg.mp4" type="video/mp4" />
-          {/* Anda dapat menambahkan elemen source tambahan untuk format video lain jika diperlukan */}
-        </video>
+      <Slider
+  dots
+  infinite
+  speed={500}
+  slidesToShow={1}
+  slidesToScroll={1}
+  autoplay
+  style={{
+    position: 'absolute',
+    top: 150,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    zIndex: -1,
+  }}
+>
+  <div>
+    <img src="/images/tg.jpg" alt="Image 1" />
+  </div>
+  <div>
+    <img src="/images/tg.jpg" alt="Image 2" />
+  </div>
+  {/* Tambahkan gambar tambahan sesuai kebutuhan */}
+</Slider>
+
 
         <p
           className="ml-1 hidden pb-3 text-sm text-white md:block md:pb-7 md:text-base"
